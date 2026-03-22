@@ -1,20 +1,21 @@
 WINDOWS Only:
 
 The Raiseon plugin (affectionately nicknamed "raisin") is a Windows-specific tool designed to solve a focus restriction in the Windows operating system that prevents minimized windows from raising or focusing themselves automatically.
+Note: This is not part of the Gajim package as it was deemed "too complicated" for the task, yet no one has or will produce a simpler version. It is offered here as your only option.
 
     Trigger: When Gajim detects a new incoming message, the plugin briefly changes the Gajim window title.
     
     AHK Detection: A background AutoHotkey script (included as gajim.ahk) monitors for this specific title change.
 
-    Window Raising: Once the script identifies the modified title, it uses AHK commands to forcefully restore and focus the Gajim window for the user.
+    Window Raising: Once the script identifies the modified title, it forcefully restores and focuses the Gajim window for the user.
 
-    Reset: After the plugin confirms the window is visible and focused, it renames the title back to "Gajim" to reset the process for the next message. 
+    Reset: After the window is visible, the title is changed back to "Gajim" to reset the process for the next message. 
 
 Usage Requirements
-To use this setup, you generally need:
+To use this setup, you need:
 
     The Raiseon plugin installed in Gajim's plugin directory (typically C:\Users\USERNAME\AppData\Roaming\Gajim\Plugins on Windows).
     An active AutoHotkey installation to run the .ahk script.
     The gajim.ahk script running in your system tray to listen for the title trigger. 
 
-    enable the plugin and set the .ahk script to run on startup.
+    enable the plugin in Gajim and run the .ahk script (optional: make a shortcut to the script in your windows startup dir) 
