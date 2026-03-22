@@ -15,6 +15,7 @@ Usage Requirements
 To use this setup, you need:
 
     The Raiseon plugin installed in Gajim's plugin directory (typically C:\Users\USERNAME\AppData\Roaming\Gajim\Plugins on Windows).
+    Set the Gajim option to *minimize* it's window on close (X).
     An active AutoHotkey installation to run the .ahk script.
     The gajim.ahk script running in your system tray to listen for the title trigger. 
 
